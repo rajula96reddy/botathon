@@ -4,7 +4,7 @@ from flask import jsonify
 
 from flask import request
 
-import urllib2,simplejson
+import urllib2,json
 app = Flask(__name__)
 
 @app.route('/currency', methods=['GET'])
@@ -15,7 +15,7 @@ def getAllEmp():
     url = "https://api.coinmarketcap.com/v1/ticker/" + cc + "/?convert=" +c
     # url="https://api.coinsecure.in/v1/exchange/ticker"
     response = urllib2.urlopen(url)
-    data = simplejson.loads(response.read())
+    data = json.loads(response.read())
     price = str(data[0]["last_updated"]) + " " + str(c.upper())
     priceincurrency = str(data[0]["price_"+c]) + " " + str(c.upper())
     dayvolume = str(data[0]["24h_volume_"+c]) + " " + str(c.upper())
@@ -34,9 +34,9 @@ def getAllEmp():
 "text": output_str
 }
 }
-    # print simplejson.dumps(engati_format)
+    # print json.dumps(engati_format)
     print output_str
-    return simplejson.dumps(engati_format, sort_keys=True, indent=4)
+    return json.dumps(engati_format, sort_keys=True, indent=4)
 
 
 if __name__ == '__main__':
