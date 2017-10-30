@@ -41,21 +41,40 @@ def getCurrencies():
 def getMovies():
     a = request.args.get('type')
     key = "11a50d9e0d4e6e2f636e6af1cf440919"
-    url = "https://api.themoviedb.org/3/movie/popular"+"?language=en-US&api_key="+key
-    # payload = "{}"
-    response = urllib2.urlopen(url)
-    # url="https://api.coinsecure.in/v1/exchange/ticker"
-    # response = urllib2.urlopen(url)
-    data = json.loads(response.read())
-    textdata=""
-    for i in range(len(data["results"])):
-        textdata = textdata +", "+ str(data["results"][i]["title"])
-    engati_format = {
-"data": {
-"type": "text",
-"text": "The list of popular movies are: " + textdata}
-}
-    return json.dumps(engati_format)
+    if(a == "movie"):
+        url = "https://api.themoviedb.org/3/movie/popular"+"?language=en-US&api_key="+key
+        # payload = "{}"
+        response = urllib2.urlopen(url)
+        # url="https://api.coinsecure.in/v1/exchange/ticker"
+        # response = urllib2.urlopen(url)
+        data = json.loads(response.read())
+        textdata=""
+        for i in range(len(data["results"])):
+            textdata = textdata +", "+ str(data["results"][i]["title"])
+        engati_format = {
+    "data": {
+    "type": "text",
+    "text": "The list of popular movies are: " + textdata}
+    }
+        return json.dumps(engati_format)
+
+    elif(a == "tvshow"):
+        key = "11a50d9e0d4e6e2f636e6af1cf440919"
+        url = "https://api.themoviedb.org/3/tv/popular"+"?language=en-US&api_key="+key
+        # payload = "{}"
+        response = urllib2.urlopen(url)
+        # url="https://api.coinsecure.in/v1/exchange/ticker"
+        # response = urllib2.urlopen(url)
+        data = json.loads(response.read())
+        textdata=""
+        for i in range(len(data["results"])):
+            textdata = textdata +", "+ str(data["results"][i]["name"])
+        engati_format = {
+    "data": {
+    "type": "text",
+    "text": "The list of popular movies are: " + textdata}
+    }
+        return json.dumps(engati_format)
 
 if __name__ == '__main__':
     app.run()
