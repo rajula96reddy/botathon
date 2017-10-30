@@ -14,10 +14,11 @@ def getAllEmp():
     response = urllib2.urlopen(url)
     data = json.loads(response.read())
     price = data['message']['lastPrice']
+    price = str(price/100)
     engati_format = {
 "data": {
 "type": "text",
-"text": price/100
+"text": price
 }
 }
     return json.dumps(engati_format)
