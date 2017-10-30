@@ -18,7 +18,7 @@ def getAllEmp():
     engati_format = {
 "data": {
 "type": "text",
-"text": price
+"text": "The last traded price of bitcoin is " + price
 }
 }
     return json.dumps(engati_format)
