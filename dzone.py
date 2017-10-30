@@ -26,7 +26,7 @@ def getCurrencies():
     percentchange_24h = data[0]["percent_change_24h"]
     percentchange_7d = data[0]["percent_change_7d"]
     # price = str(price/100)
-    output_str = "The last updated price of " + cc + " is " + price + " ," + "The price in the given currency is " + priceincurrency + " ," + "The day volume is " + dayvolume +" ," + "The market cap is " + marketcap +" ," + "The total supply is " + totalsupply +" ," + "The available supply is " + availablesupply +" ," + "The percentage change in last 1 hour is "  + percentchange_1h + " ," "The percentage change in last 24 hours is "  + percentchange_24h + " &" "The percentage change in last 7 days is " + percentchange_7d
+    output_str = "The last updated price of " + cc + " is " + price + ", " + "The price in the given currency is " + priceincurrency + ", " + "The day volume is " + dayvolume +", " + "The market cap is " + marketcap +", " + "The total supply is " + totalsupply +", " + "The available supply is " + availablesupply +", " + "The percentage change in last 1 hour is "  + percentchange_1h + ", " "The percentage change in last 24 hours is "  + percentchange_24h + " &" "The percentage change in last 7 days is " + percentchange_7d
     print output_str
     engati_format = { "data": {
     "type": "text", "text": output_str
