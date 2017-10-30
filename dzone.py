@@ -7,7 +7,7 @@ from flask import request
 import urllib2,simplejson
 app = Flask(__name__)
 
-@app.route('/', methods=['GET'])
+@app.route('/currency', methods=['GET'])
 
 def getAllEmp():
     cc = request.args.get('cryptocurrency')
