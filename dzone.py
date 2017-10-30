@@ -10,10 +10,17 @@ app = Flask(__name__)
 @app.route('/',methods=['GET'])
 
 def getAllEmp():
-    url="http://www.json-generator.com/api/json/get/ckgOiCWLfS?indent=2" 
+    url="https://api.coinsecure.in/v1/exchange/ticker"
     response = urllib2.urlopen(url)
-    data= json.loads(response.read())
-    return jsonify(data)
+    data = json.loads(response.read())
+    price = data['message']['lastPrice']
+    engati_format = {
+"data": {
+"type": "text",
+"text": price/100
+}
+}
+    return json.dumps(engati_format)
 
 
 if __name__ == '__main__':
