@@ -26,22 +26,8 @@ def getCurrencies():
         cc = 'XRP'
     elif (cc1 == '7'):
         cc = 'XMR'            
-    c1 = request.args.get('currency')
+    c = request.args.get('currency')
     # c= 'USD'
-    if (c1 == '1'):
-        c = 'INR'
-    elif (c1 == '2'):
-        c = 'USD'
-    elif (c1 == '3'):
-        c = 'EUR'
-    elif (c1 == '4'):
-        c = 'SGD'
-    elif (c1 == '5'):
-        c = 'JPY'
-    elif (c1 == '6'):
-        c = 'JBB'
-    elif (c1 == '7'):
-        c = 'XMR'    
     url = "https://min-api.cryptocompare.com/data/pricemultifull?fsyms="+str(cc)+"&tsyms="+str(c)
     print url
     # url="https://api.coinsecure.in/v1/exchange/ticker"
