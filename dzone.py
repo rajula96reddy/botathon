@@ -84,49 +84,5 @@ def getMovies():
     }
         return json.dumps(engati_format)
 
-@app.route('/search', methods=['GET'])
-
-def getDetails():
-    a = request.args.get('type')
-    query = str(request.args.get('search'))
-    key = "11a50d9e0d4e6e2f636e6af1cf440919"
-    if(a == "movie"):
-        url = "https://api.themoviedb.org/3/search/movie"+"?language=en-US&query="+query+"&api_key="+key
-        print url
-        # payload = "{}"
-        response = urllib2.urlopen(url)
-        # url="https://api.coinsecure.in/v1/exchange/ticker"
-        # response = urllib2.urlopen(url)
-        data = json.loads(response.read())
-        title = str(data['results'][0]['title'])
-        vote_average = str(data['results'][0]['vote_average'])
-        release_date = str(data['results'][0]['release_date'])
-        overview = data['results'][0]['overview']
-        engati_format = {
-    "data": {
-    "type": "text",
-    "text": "The details of the movie with the nearest match are Title: "+ title + " Release Date: " + release_date + " Vote Average: " + vote_average + " Overview: " + overview}
-    }
-        return json.dumps(engati_format)
-
-    # elif(a == "tvshow"):
-    #     key = "11a50d9e0d4e6e2f636e6af1cf440919"
-    #     url = "https://api.themoviedb.org/3/search/tv"+"?language=en-US&query="+query+"&api_key="+key
-    #     # payload = "{}"
-    #     response = urllib2.urlopen(url)
-    #     # url="https://api.coinsecure.in/v1/exchange/ticker"
-    #     # response = urllib2.urlopen(url)
-    #     data = json.loads(response.read())
-    #     title = data['results'][0]['name']
-    #     vote_average = data['results'][0]['vote_average']
-    #     first_air_date = data['results'][0]['first_air_date']
-    #     overview = data['results'][0]['overview']
-    #     engati_format = {
-    # "data": {
-    # "type": "text",
-    # "text": "The details of the movie with the nearest match are Title: "+ title + " First Air Date: " + first_air_date + " Vote Average: " + vote_average + " Overview: " + overview}
-    # }
-    #     return json.dumps(engati_format)
-
 if __name__ == '__main__':
     app.run()
