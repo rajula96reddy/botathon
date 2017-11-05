@@ -1,4 +1,3 @@
-# coding=utf-8
 from flask import Flask
 
 from flask import jsonify
@@ -11,10 +10,38 @@ app = Flask(__name__)
 @app.route('/currency', methods=['GET'])
 
 def getCurrencies():
-    cc = request.args.get('cryptocurrency')
+    cc1 = request.args.get('cryptocurrency')
     # cc ='BTC'
-    c = request.args.get('currency')
+    if (cc1 == '1'):
+        cc = 'BTC'
+    elif (cc1 == '2'):
+        cc = 'LTC'
+    elif (cc1 == '3'):
+        cc = 'ETH'
+    elif (cc1 == '4'):
+        cc = 'ZEC'
+    elif (cc1 == '5'):
+        cc = 'DASH'
+    elif (cc1 == '6'):
+        cc = 'XRP'
+    elif (cc1 == '7'):
+        cc = 'XMR'            
+    c1 = request.args.get('currency')
     # c= 'USD'
+    if (c1 == '1'):
+        c = 'INR'
+    elif (c1 == '2'):
+        c = 'USD'
+    elif (c1 == '3'):
+        c = 'EUR'
+    elif (c1 == '4'):
+        c = 'SGD'
+    elif (c1 == '5'):
+        c = 'JPY'
+    elif (c1 == '6'):
+        c = 'JBB'
+    elif (c1 == '7'):
+        c = 'XMR'    
     url = "https://min-api.cryptocompare.com/data/pricemultifull?fsyms="+str(cc)+"&tsyms="+str(c)
     print url
     # url="https://api.coinsecure.in/v1/exchange/ticker"
@@ -36,6 +63,39 @@ def getCurrencies():
     # percentchange_7d = data[0]["percent_change_7d"]
     # price = str(price/100)
     output_str = "The price of " + cc + " in " + c+ " is " + price + ", today's open day price is "+ open_day+ ", today's lowest price is "+ low_day+", today's highest price is "+high_day
+    # print output_str
+    engati_format = { "data": {
+    "type": "text", "text": output_str
+    }
+    }
+    # print json.dumps(engati_format)
+    print output_str
+    return json.dumps(engati_format, sort_keys=True, indent=4, ensure_ascii=False)
+
+@app.route('/currencyCompare', methods=['GET'])
+
+def compareCurrencies():
+    cc1 = request.args.get('cryptocurrency1')
+    # cc ='BTC'
+    cc2 = request.args.get('cryptocurrency2')
+    # c= 'USD'
+    url = "https://min-api.cryptocompare.com/data/pricemultifull?fsyms="+str(cc1)+","+str(cc2)+"&tsyms=USD"
+    # print url
+    # url="https://api.coinsecure.in/v1/exchange/ticker"
+    cc1 = str(cc1)
+    response = urllib2.urlopen(url)
+    data = json.loads(response.read())
+    price1 = data['RAW'][cc1]['USD']['PRICE']
+    
+    price2 = data['RAW'][cc2]['USD']['PRICE']
+
+
+    if(price1 > price2):
+        output_str = cc1 + " is leading " + cc2 + " by " + str(round(((price1-price2)/price1)*100,2)) + "%"
+    elif(price2 > price1):
+        output_str = cc2 + " is leading " + cc1 + " by " + str(round(((price2-price1)/price2)*100,2)) + "%"
+    else:
+        output_str = cc2 + " is equal to " + cc1
     # print output_str
     engati_format = { "data": {
     "type": "text", "text": output_str
