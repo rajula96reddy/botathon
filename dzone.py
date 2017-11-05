@@ -63,25 +63,53 @@ def getCurrencies():
 def compareCurrencies():
     cc1 = request.args.get('cryptocurrency1')
     # cc ='BTC'
+    if (cc1 == '1'):
+        cc = 'BTC'
+    elif (cc1 == '2'):
+        cc = 'LTC'
+    elif (cc1 == '3'):
+        cc = 'ETH'
+    elif (cc1 == '4'):
+        cc = 'ZEC'
+    elif (cc1 == '5'):
+        cc = 'DASH'
+    elif (cc1 == '6'):
+        cc = 'XRP'
+    elif (cc1 == '7'):
+        cc = 'XMR'       
     cc2 = request.args.get('cryptocurrency2')
+    if (cc2 == '1'):
+        cc0 = 'BTC'
+    elif (cc2 == '2'):
+        cc0 = 'LTC'
+    elif (cc2 == '3'):
+        cc0 = 'ETH'
+    elif (cc2 == '4'):
+        cc0 = 'ZEC'
+    elif (cc2 == '5'):
+        cc0 = 'DASH'
+    elif (cc2 == '6'):
+        cc0 = 'XRP'
+    elif (cc2 == '7'):
+        cc0 = 'XMR'   
     # c= 'USD'
-    url = "https://min-api.cryptocompare.com/data/pricemultifull?fsyms="+str(cc1)+","+str(cc2)+"&tsyms=USD"
+    url = "https://min-api.cryptocompare.com/data/pricemultifull?fsyms="+str(cc)+","+str(cc0)+"&tsyms=USD"
     # print url
     # url="https://api.coinsecure.in/v1/exchange/ticker"
-    cc1 = str(cc1)
+    # cc1 = str(cc1)
     response = urllib2.urlopen(url)
     data = json.loads(response.read())
-    price1 = data['RAW'][cc1]['USD']['PRICE']
+    price1 = data['RAW'][cc]['USD']['PRICE']
     
-    price2 = data['RAW'][cc2]['USD']['PRICE']
+    price2 = data['RAW'][cc0]['USD']['PRICE']
 
 
     if(price1 > price2):
-        output_str = cc1 + " is leading " + cc2 + " by " + str(round(((price1-price2)/price1)*100,2)) + "%"
+        output_str = cc + " is leading " + cc0 + " by " + str(round(((price1-price2)/price1)*100,2)) + "%"
     elif(price2 > price1):
-        output_str = cc2 + " is leading " + cc1 + " by " + str(round(((price2-price1)/price2)*100,2)) + "%"
+        output_str = cc0 + " is leading " + cc + " by " + str(round(((price2-price1)/price2)*100,2)) + "%"
     else:
-        output_str = cc2 + " is equal to " + cc1
+        output_str = cc0 + " is equal to " + cc
     # print output_str
     engati_format = { "data": {
     "type": "text", "text": output_str
