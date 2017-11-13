@@ -35,4 +35,4 @@ Bot Rick was built using all of the various engati nodes:
 **Team/Individual Name**: Rama Raju and Vineet Reddy
 
 **Bot Link**: https://www.messenger.com/t/1340066322789431
-Available on:
+**Available on**: Facebook Messenger
