@@ -12,6 +12,7 @@ Bot Rick is a smart and interactive bot which can provide a hell lot of informat
     - For example: Present value of Ethereum in INR or Bitcoin in EUR
 - Compare a given two crypto currencies
     - For example: Comparing Ethereum & Bitcoin
+- Provide fun facts about crypto currencies to the user to expose the fun side of crypto currencies.
 
 The primary audience can be any one as the information bot gives is very simple and any one can understand. But to be specific the bot will be really come in handy for crypto currency Investors and Analysts.  
 
