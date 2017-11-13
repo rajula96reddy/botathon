@@ -50,10 +50,9 @@ https://www.messenger.com/t/ChatWithBotRick
 Facebook Messenger
 
 ## Who will be the primary user segment of the bot ---
-
-##Is the bot targeted to a specific function, domain or industry?
-(Note : Business or domain bots will get a higher precedence compared to a general or a hobby
-bot)
+Cyrpto Currency investors and it's enthusiasts
+## Is the bot targeted to a specific function, domain or industry?
+Yes. It is target to the Crypto Currency industry.
 ## What primary functions/features does the bot provide?
 –E.g.
 Car Sales FAQs
@@ -68,3 +67,5 @@ Flows
 ## What improvements would you suggest for the platform?
 
 ## On a scale of 10, how would you rate the usability and effectiveness of the bot you created? What else could you have done better?
+ - Usability - 8
+ - Effectiveness - 7
