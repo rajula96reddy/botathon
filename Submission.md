@@ -14,7 +14,6 @@ Bot Rick is a smart and interactive bot which can provide a hell lot of informat
     - For example: Comparing Ethereum & Bitcoin
 - Provide fun facts about crypto currencies to the user to expose the fun side of crypto currencies.
 
-
 Bot Rick was built using all of the various engati nodes:
 - Send Message
 - Send Message (with options)
@@ -28,11 +27,14 @@ Bot Rick was built using all of the various engati nodes:
 - Send Image
 - Send Random Messages
 
-**Audience** : The primary audience can be any one as the information bot gives is very simple and any one can understand. But to be specific the bot will be really come in handy for crypto currency Investors and Analysts.  
+***Audience*** : The primary audience can be any one as the information bot gives is very simple and any one can understand. But to be specific the bot will be really come in handy for crypto currency Investors and Analysts.  
 
-**Need**: The bot fulfills the basic need for checking the changes in the price which is really obvious but helpful.  
+***Need***: The bot fulfills the basic need of educating on crypto currencies and for checking the changes in the price which is really obvious but helpful.  
 
-**Team/Individual Name**: Rama Raju and Vineet Reddy
+***Uniqueness***: In a world filled with diverse data, bringing data together in a collective form is helpful in many ways. That is where the uniqueness our chat bot shines. Combining knowledge and exploration into a single chat bot is rare in today's world and that's what makes our chat bot unique. Our chat bot provides knowledge (tutorials , funfacts) and exploration (exploring individual crypto currency, comparing 2 crypto currencies). 
+
+**Team/Individual Name**: Pericherla Seetarama Raju and Rajula Vineet Reddy
 
 **Bot Link**: https://www.messenger.com/t/1340066322789431
+
 **Available on**: Facebook Messenger
