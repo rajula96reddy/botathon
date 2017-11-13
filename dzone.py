@@ -121,7 +121,7 @@ def compareCurrencies():
 
 @app.route('/funfacts', methods=['GET'])
 
-def getDetails():
+def getFunFact():
     list=["Satoshi Nakamoto Bitcoin created in the 2008th year. It is believed that Satoshi Nakamoto - a pseudonym bitcoin creator. The whole world is trying to solve the mystery of his true identity.","Every day produces about 3,600 new Bitcoins. Coins are blocks in a process called mining.","The first transfer Bitcoin transaction took place on January 21, 2009. Satoshi himself translated 100 BTC Hal Finney - another tsiferpanku and cryptography (Hal Finney)","So far, attempts to reveal the identity of the mysterious Satoshi Nakamoto, but to no avail. The latest version of the results Satoshi - Dorian caused a great stir, but it was quickly disproved."]
 
     engati_format = {
@@ -129,7 +129,7 @@ def getDetails():
     "type": "text",
     "text": list[random.randint(0,len(list)-1)]}
     }
-        return json.dumps(engati_format)
+    return json.dumps(engati_format)
 
 @app.route('/movie', methods=['GET'])
 
