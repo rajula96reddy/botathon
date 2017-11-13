@@ -16,13 +16,14 @@ Bot Rick is a smart and interactive bot which can provide a hell lot of informat
 
 The primary audience can be any one as the information bot gives is very simple and any one can understand. But to be specific the bot will be really come in handy for crypto currency Investors and Analysts.  
 
-Bot Rick was built using the following various engati nodes:
+Bot Rick was built using all of the various engati nodes:
 - Send Message
 - Send Message (with options)
 - Send Carousel
 - Request User Data
 - Trigger a path
 - Send Email
+- Send Audio
 - Send Video
 - JSON API
 - Send Image
