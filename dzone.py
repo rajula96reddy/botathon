@@ -4,7 +4,7 @@ from flask import jsonify
 
 from flask import request
 
-import urllib2,json
+import urllib2,json,random
 app = Flask(__name__)
 
 @app.route('/currency', methods=['GET'])
