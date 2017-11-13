@@ -25,7 +25,7 @@ def getCurrencies():
     elif (cc1 == '6'):
         cc = 'XRP'
     elif (cc1 == '7'):
-        cc = 'XMR'            
+        cc = 'XMR'
     c = request.args.get('currency')
     # c= 'USD'
     url = "https://min-api.cryptocompare.com/data/pricemultifull?fsyms="+str(cc)+"&tsyms="+str(c)
@@ -76,7 +76,7 @@ def compareCurrencies():
     elif (cc1 == '6'):
         cc = 'XRP'
     elif (cc1 == '7'):
-        cc = 'XMR'       
+        cc = 'XMR'
     cc2 = request.args.get('cryptocurrency2')
     if (cc2 == '1'):
         cc0 = 'BTC'
@@ -91,7 +91,7 @@ def compareCurrencies():
     elif (cc2 == '6'):
         cc0 = 'XRP'
     elif (cc2 == '7'):
-        cc0 = 'XMR'   
+        cc0 = 'XMR'
     # c= 'USD'
     url = "https://min-api.cryptocompare.com/data/pricemultifull?fsyms="+str(cc)+","+str(cc0)+"&tsyms=USD"
     # print url
@@ -100,7 +100,7 @@ def compareCurrencies():
     response = urllib2.urlopen(url)
     data = json.loads(response.read())
     price1 = data['RAW'][cc]['USD']['PRICE']
-    
+
     price2 = data['RAW'][cc0]['USD']['PRICE']
 
 
@@ -118,6 +118,18 @@ def compareCurrencies():
     # print json.dumps(engati_format)
     print output_str
     return json.dumps(engati_format, sort_keys=True, indent=4, ensure_ascii=False)
+
+@app.route('/funfacts', methods=['GET'])
+
+def getDetails():
+    list=["Satoshi Nakamoto Bitcoin created in the 2008th year. It is believed that Satoshi Nakamoto - a pseudonym bitcoin creator. The whole world is trying to solve the mystery of his true identity.","Every day produces about 3,600 new Bitcoins. Coins are blocks in a process called mining.","The first transfer Bitcoin transaction took place on January 21, 2009. Satoshi himself translated 100 BTC Hal Finney - another tsiferpanku and cryptography (Hal Finney)","So far, attempts to reveal the identity of the mysterious Satoshi Nakamoto, but to no avail. The latest version of the results Satoshi - Dorian caused a great stir, but it was quickly disproved."]
+
+    engati_format = {
+    "data": {
+    "type": "text",
+    "text": list[random.randint(0,len(list)-1)]}
+    }
+        return json.dumps(engati_format)
 
 @app.route('/movie', methods=['GET'])
 
@@ -183,6 +195,7 @@ def getDetails():
     "text": "The details of the movie with the nearest match are Title: "+ title + " Release Date: " + release_date + " Vote Average: " + vote_average + " Overview: " + overview}
     }
         return json.dumps(engati_format)
+
 
     # elif(a == "tvshow"):
     #     key = "11a50d9e0d4e6e2f636e6af1cf440919"
