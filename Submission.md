@@ -1,6 +1,6 @@
 # Botathon Idea Submission
 
-## Bot Name: 
+## Bot Name:
 "Bot Rick"
 
 ## Bot Description:
@@ -28,23 +28,43 @@ Bot Rick was built using all of the various engati nodes:
 - Send Image
 - Send Random Messages
 
-#### Audience: 
+#### Audience:
 The primary audience can be any one as the information bot gives is very simple and any one can understand. But to be specific the bot will be really come in handy for crypto currency Investors and Analysts.  
 
-#### Need: 
+#### Need:
 The bot fulfills many needs:  
  - Learning about crypto currencies need not require talking with others and looking at different tutorials, different formats of tutorials is just a message away.
- - Up-to-date information on crypto currencies need not require opening up your browser, searching and looking at different websites, it's just a message away. 
+ - Up-to-date information on crypto currencies need not require opening up your browser, searching and looking at different websites, it's just a message away.
  - Comparing 2 crypto currencies need not require keeping track of the information of both crypto currencies, its jsut a message away.
 
-#### Uniqueness: 
-In a world filled with diverse data, bringing data together in a collective form is helpful in many ways. That is where our chat bot shines in. Combining knowledge and exploration into a single chat bot is rare in today's world and that's what makes our chat bot unique. Our chat bot provides knowledge (tutorials , funfacts) and exploration (exploring individual crypto currency, comparing 2 crypto currencies). 
+#### Uniqueness:
+In a world filled with diverse data, bringing data together in a collective form is helpful in many ways. That is where our chat bot shines in. Combining knowledge and exploration into a single chat bot is rare in today's world and that's what makes our chat bot unique. Our chat bot provides knowledge (tutorials , funfacts) and exploration (exploring individual crypto currency, comparing 2 crypto currencies).
 
-## Team/Individual Name: 
+## Team/Individual Name:
 Pericherla Seetarama Raju and Rajula Vineet Reddy
 
-## Bot Link: 
-https://www.messenger.com/t/1340066322789431
+## Bot Link:
+https://www.messenger.com/t/ChatWithBotRick
 
-## Available on: 
+## Available on:
 Facebook Messenger
+
+## Who will be the primary user segment of the bot ---
+
+##Is the bot targeted to a specific function, domain or industry?
+(Note : Business or domain bots will get a higher precedence compared to a general or a hobby
+bot)
+## What primary functions/features does the bot provide?
+–E.g.
+Car Sales FAQs
+–
+Car Service FAQs
+–
+Accident Assistance
+Flows
+•
+## What did you like about the Engati platform?
+
+## What improvements would you suggest for the platform?
+
+## On a scale of 10, how would you rate the usability and effectiveness of the bot you created? What else could you have done better?
