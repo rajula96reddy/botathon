@@ -5,15 +5,15 @@
 
 ## Bot Description:
 
-Current era has seen a revolution of crypto currencies and it's influence on different domains. At this point of time there are around **45** Exchanges, **2230** Exchanges, **2879** crypto currencies,  and the count is not gonna stop any time now. And being up to date with the currency ups and downs is more of a neccessity rather than an option. So '**Bot Rick**' is an attempt to keep the user upto date with the latest trends in the crypto currencies.
+Current era has seen a revolution of cryptocurrencies and it's influence on different domains. At this point in time there are around **45** Exchanges, **2230** Exchanges, **2879** cryptocurrencies,  and the count is not gonna stop anytime now. And being up to date with the currency ups and downs is more of a necessity rather than an option. So '**Bot Rick**' is an attempt to keep the user up to date with the latest trends in the cryptocurrencies.
 
 Bot Rick is a smart and interactive bot which can provide a hell lot of information. Bot Rick has the following features:
-- Provide introduction to the concept of crypto currency in the form of video, audio text tutorials. The tutorials can also be sent to the user.
-- Get current value of the selected crpto currency translated in to the selected currency.
-    - For example: Present value of Ethereum in INR or Bitcoin in EUR
-- Compare any two given crypto currencies
+- Provide an introduction to the concept of cryptocurrency in the form of video, audio text tutorials. The tutorials can also be sent to the user.
+- Get the current value of the selected cryptocurrency translated into the selected currency.
+    - For example Present value of Ethereum in INR or Bitcoin in EUR
+- Compare any two given cryptocurrencies
     - For example: Comparing Ethereum & Bitcoin
-- Provide fun facts about crypto currencies to the user to expose the fun side of crypto currencies.
+- Provide fun facts about cryptocurrencies to the user to expose the fun side of cryptocurrencies.
 
 Bot Rick was built using all of the various engati nodes:
 - Send Message
@@ -29,16 +29,16 @@ Bot Rick was built using all of the various engati nodes:
 - Send Random Messages
 
 #### Audience:
-The primary audience can be any one as the information bot gives is very simple and any one can understand. But to be specific the bot will be really come in handy for crypto currency Investors and Analysts.  
+The primary audience can be anyone as the information bot gives is very simple and anyone can understand. But to be specific the bot will be really come in handy for cryptocurrency Investors and Analysts.  
 
 #### Need:
 The bot fulfills many needs:  
- - Learning about crypto currencies need not require talking with others and looking at different tutorials, different formats of tutorials is just a message away.
- - Up-to-date information on crypto currencies need not require opening up your browser, searching and looking at different websites, it's just a message away.
- - Comparing 2 crypto currencies need not require keeping track of the information of both crypto currencies, its just a message away.
+ - Learning about cryptocurrencies need not require talking with others and looking at different tutorials, different formats of tutorials is just a message away.
+ - Up-to-date information on cryptocurrencies need not require opening up your browser, searching and looking at different websites, it's just a message away.
+ - Comparing 2 cryptocurrencies need not require keeping track of the information of both cryptocurrencies, it is just a message away.
 
 #### Uniqueness:
-In a world filled with diverse data, bringing data together in a collective form is helpful in many ways. That is where our chat bot shines in. Combining knowledge and exploration into a single chat bot is rare in today's world and that's what makes our chat bot unique. Our chat bot provides knowledge (tutorials , funfacts) and exploration (exploring individual crypto currency, comparing 2 crypto currencies).
+In a world filled with diverse data, bringing data together in a collective form is helpful in many ways. That is where our chatbot shines in. Combining knowledge and exploration into a single chatbot is rare in today's world and that's what makes our chatbot unique. Our chat bot provides knowledge (tutorials, fun facts) and exploration (exploring individual cryptocurrency, comparing 2 cryptocurrencies).
 
 ## Team/Individual Name:
 Pericherla Seetarama Raju and Rajula Vineet Reddy
@@ -50,32 +50,32 @@ https://www.messenger.com/t/ChatWithBotRick
 Facebook Messenger
 
 ## Who will be the primary user segment of the bot?
-Crypto Currency investors/analysts and it's enthusiasts.
+Crypto Currency investors/analysts and its enthusiasts.
 ## Is the bot targeted to a specific function, domain or industry?
-Yes. It is target to the **Crypto Currency industry** and **blockchain domain**.
+Yes. It is targeted to the **Crypto Currency industry** and **blockchain domain**.
 ## What primary functions/features does the bot provide?
 Bot Rick has the following features:
-- Provide introduction to the concept of crypto currency in the form of video, audio text tutorials. The tutorials can also be sent to the user.
-- Get current value of the selected crpto currency translated in to the selected currency.
-    - For example: Present value of Ethereum in INR or Bitcoin in EUR
-- Compare any two given crypto currencies
+- Provide an introduction to the concept of cryptocurrency in the form of video, audio text tutorials. The tutorials can also be sent to the user.
+- Get the current value of the selected cryptocurrency translated into the selected currency.
+    - For example Present value of Ethereum in INR or Bitcoin in EUR
+- Compare any two given cryptocurrencies
     - For example: Comparing Ethereum & Bitcoin
-- Provide fun facts about crypto currencies to the user to expose the fun side of crypto currencies.
+- Provide fun facts about cryptocurrencies to the user to expose the fun side of cryptocurrencies.
 
 ## What did you like about the Engati platform?
-There are many things we liked about about the platform:
+There are many things we liked about the platform:
 - Simple to use interface.
-- Connecting the chat bot to any platform is quick and simple.
+- Connecting the chatbot to any platform is quick and simple.
 - Availability of many features.
 
 
 ## What improvements would you suggest for the platform?
-During the development of the chat bot, we found a bug and we reported it. The response team were very quick to help us understand the reason for the issue and suggested changes. 
+During the development of the chatbot, we found a bug and we reported it. The response team was very quick to help us understand the reason for the issue and suggested changes.
 The bug as stated by the response team:
 
 Other improvements we would suggest are:
-- For the JSON API, only GET requests are being allowed for now. But for developers like us, having other types of requests like POST, etc., would be very useful.
-- Allowing developers to post videos and audio clips from youtube or any other streaming platofrms would be very useful.
+- For the JSON API, only GET requests are being allowed for now. But for developers like us, having other types of requests like PUT, POST, etc., would be very useful.
+- Allowing developers to post videos and audio clips from youtube or any other streaming platforms would be very useful.
 
 ## On a scale of 10, how would you rate the usability and effectiveness of the bot you created? What else could you have done better?
  - Usability - 8
