@@ -45,9 +45,9 @@ Facebook Messenger
 ## Who will be the primary user segment of the bot?
 - Cryptocurrency enthusiasts. 
 - Cryptocurrency investors/analysts
-- Anyone who is interested to learn more about cryptocurrencies and explore it more further.
+- Anyone who is interested to learn more about cryptocurrencies and explore it further.
 ## Is the bot targeted to a specific function, domain or industry?
-Yes. It is targeted to the **Crypto Currency industry** and **Blockchain domain**.
+Yes. It is targeted to the **Cryptocurrency industry** and **Blockchain domain**.
 ## What primary functions/features does the bot provide?
 Bot Rick is a smart and interactive bot which can provide a hell lot of information. Bot Rick has the following features:
 - Provide an introduction to the concept of cryptocurrency in the form of video, audio text tutorials. The tutorials can also be sent to the user.
@@ -71,7 +71,7 @@ During the development of the chatbot, we found 2 bugs and we reported them. The
 #### Bug 1 (as stated by the response team):
 Facebook's restriction on the length of any menu item is 30 characters. But, there was a no 30-character restriction on the menu item when created through Engati. The response team said that they are working on the bug which we were really happy to know.
 #### Bug 2:
-When creating a the "Send Audio" node inside a path, we uploaded a mp3 audio clip but the audio clip was not being sent by the chatbot to the user.
+When creating a the "Send Audio" node inside a path, we uploaded an mp3 audio clip but the audio clip was not being sent by the chatbot to the user.
 #### Other improvements which we would suggest are:
 - For the JSON API, only GET requests are being allowed for now. But for developers like us, having other types of requests like PUT, POST, etc., would be very useful.
 - Allowing developers to post videos and audio clips from youtube or any other streaming platforms would be very useful.
@@ -82,4 +82,4 @@ When creating a the "Send Audio" node inside a path, we uploaded a mp3 audio cli
  - Usability - 8
  - Effectiveness - 8
  ### Future Work
- Adding a payment payment through cryptocurrencies through a secure protocol so that any one can pay using the chat bot with just few clicks.
+ Adding a payment through cryptocurrencies through a secure protocol so that anyone can pay using the chatbot with just a few clicks.
