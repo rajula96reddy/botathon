@@ -68,11 +68,11 @@ There are many things we liked about the platform:
 
 ## What improvements would you suggest for the platform?
 During the development of the chatbot, we found 2 bugs and we reported them. The response team was very quick to help us understand the reason for one of the bug and suggested changes. 
-### Bug 1 (as stated by the response team):
+#### Bug 1 (as stated by the response team):
 Facebook's restriction on the length of any menu item is 30 characters. But, there was a no 30-character restriction on the menu item when created through Engati. The response team said that they are working on the bug which we were really happy to know.
-### Bug 2:
+#### Bug 2:
 When creating a the "Send Audio" node inside a path, we uploaded a mp3 audio clip but the audio clip was not being sent by the chatbot to the user.
-### Other improvements which we would suggest are:
+#### Other improvements which we would suggest are:
 - For the JSON API, only GET requests are being allowed for now. But for developers like us, having other types of requests like PUT, POST, etc., would be very useful.
 - Allowing developers to post videos and audio clips from youtube or any other streaming platforms would be very useful.
 - Being able to download the FAQ's and Paths in a readable format like in other platforms (API.ai)
