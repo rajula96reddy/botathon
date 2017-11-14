@@ -5,7 +5,7 @@
 
 ## Bot Description:
 
-Current era has seen a revolution of cryptocurrencies and it's influence on different domains. At this point in time there are around **45** Exchanges, **2230** Exchanges, **2879** cryptocurrencies,  and the count is not gonna stop anytime now. And being up to date with the currency ups and downs is more of a necessity rather than an option. So '**Bot Rick**' is an attempt to keep the user up to date with the latest trends in the cryptocurrencies.
+Current era has seen a revolution of cryptocurrencies and it's influence on different domains. At this point in time, there are around **45** Exchanges, **2230** Exchanges, **2879** cryptocurrencies,  and the count is not gonna stop anytime now. And being up to date with the currency ups and downs is more of a necessity rather than an option. So '**Bot Rick**' is an attempt to keep the user up to date with the latest trends in the cryptocurrencies.
 
 Bot Rick was built using all of the various engati nodes:
 - Send Message
@@ -69,7 +69,7 @@ The bug as stated by the response team:
 Other improvements we would suggest are:
 - For the JSON API, only GET requests are being allowed for now. But for developers like us, having other types of requests like PUT, POST, etc., would be very useful.
 - Allowing developers to post videos and audio clips from youtube or any other streaming platforms would be very useful.
-- Being able to download the FAQ's and Paths in a readable format like in other platforms (API.ai) 
+- Being able to download the FAQ's and Paths in a readable format like in other platforms (API.ai)
 
 ## On a scale of 10, how would you rate the usability and effectiveness of the bot you created? What else could you have done better?
  - Usability - 8
